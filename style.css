@@ -1,25 +1,3 @@
-/* InFlux */
-a {
-    color: #333333;
-    text-decoration: none;
-}
-
-button.link-btn {
-    padding: 10px 10px;
-}
-
-/* Button */
-.link-btn {
-    background: none;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    font: inherit;
-    padding: 0;
-    margin: 0;
-    display: inline;
-}
-
 /* InFlux NAV Bar */
 #navbar {
     position: sticky;
@@ -32,7 +10,7 @@ button.link-btn {
 .nav-flex {
     display: flex;
     justify-content: center;
-    margin: 0 100px;
+    margin: 0 auto;
 }
 
 /* Top left logo */
@@ -57,8 +35,35 @@ button.link-btn {
     padding: 0;
 }
 
+/* Button */
+button.nav-btn {
+    padding: 10px 10px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    display: inline;
+}
+
+.link-btn {
+    color: #333333;
+    text-decoration: none;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #333333;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    transform: scaleX(1.3);
+    display: inline-block;
+}
+
 /* InFlux Body */
-/* Body */
 body {
     margin: 0;
     padding: 0;
@@ -67,14 +72,19 @@ body {
     position: relative;
 }
 
+.container-1 {
+    height: 100vh;
+}
+
 .background-element {
     position: absolute;
-    top: 100px;
+    top: 105px;
     bottom: 200px;
     left: 0;
-    width: 50%;
+    height: 620px;
+    width: 49%;
     background-color: #F7F7F7;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
     z-index: 1;
     border-top-right-radius: 400px;
     border-bottom-right-radius: 400px;
@@ -86,15 +96,8 @@ body {
     justify-content: center;
     width: 100%;
     position: relative;
+    padding-top: 5px;
     z-index: 2;
-}
-
-/* Daniel Keller Picture */
-.headshot {
-    height: 580px;
-    width: 580px;
-    border-radius: 400px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Section 1 Content */
@@ -102,9 +105,21 @@ body {
     padding: 35px;
 }
 
+/* Daniel Keller Picture */
+.headshot {
+    height: 550px;
+    width: 550px;
+    border-radius: 400px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
 .sec-1-right {
     max-width: 600px;
     padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Title */
@@ -114,7 +129,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    margin: 10px;
+    margin: 0px;
 }
 
 .sec1-h1-2 {
@@ -123,11 +138,146 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    margin: 10px;
+    margin: 0px;
 }
 
 /* Paragraph */
 .sec1-p {
     color: #98A7B9;
     text-align: right;
+    padding-left: 40px;
+    margin: 20px 0px;
+}
+
+/* Home Submenu */
+.home-submenu {
+    display: flex;
+    padding: 40 20;
+    max-height: 85px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* Title 1 - 3 */
+.title-1 {
+    color: #1B63EF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    max-width: 230px;
+    margin: 15px 0px 15px 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+h3.title-2, h3.title-3 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    max-width: 230px;
+    margin: 15px 0px 15px 0px;
+    padding: 0px 20px 20px 20px;
+}
+
+/* Vertical lines */
+.seps {
+    border-left: 2px solid #98A7B9;
+    height: 70px;
+}
+
+/* The Future of AI */
+.container-2 {
+    height: 100vh;
+}
+
+.background-element-rev {
+    position: absolute;
+    right: 0;
+    height: 620px;
+    width: 49%;
+    background-color: #F7F7F7;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
+}
+
+.content-container-rev {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+    z-index: 2;
+}
+
+/* Section 2 Content Reversed */
+.sec-2-left {
+    padding: 35px;
+}
+
+/* Daniel Keller Picture */
+.headshot-2 {
+    height: 550px;
+    width: 550px;
+    border-radius: 400px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+}
+
+.sec-2-right {
+    max-width: 600px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Title */
+.sec2-h1 {
+    color: #1B63EF;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.sec2-h1-2 {
+    color: #333333;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+/* Paragraph */
+.sec2-p {
+    color: #98A7B9;
+    text-align: left;
+    padding-right: 40px;
+}
+
+/* Button */
+button.more-btn {
+    padding: 10px 10px;
+}
+
+.more-btn {
+    background-color: #1B63EF;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.btn-text {
+    color: white;
+    text-decoration: none;
 }
