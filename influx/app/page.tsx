@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css'; // Import your CSS file
+import './nav.css'; // Import your CSS file
 
 const Page: React.FC = () => {
     return (
