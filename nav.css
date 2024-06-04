@@ -4,6 +4,41 @@
     margin: 0;
 }
 
+/* Responsive Img
+img {
+    display: block;
+    max-width: 100%;
+} */
+
+/* Font Management */
+:root {
+    /* Minimum - Growth Rate (Normal Size) - Maximum
+    --fs-title: clamp(1rem, 0.25rem + 1vw, 1.25rem); */
+    --fs-title: 1.25rem;
+    --fs-header4: 3.15rem;
+    --fs-header3: 2.85rem;
+    --fs-header: 2.8rem;
+    --fs-sub-header: 1.25rem;
+    --fs-body: 1rem;
+    --fs-body4: 0.95rem;
+    --fs-learn-more: 1rem;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    :root {
+        --fs-xl: ;
+        --fs-title: 1.25rem;
+        --fs-header4: 3.15rem;
+        --fs-header3: 2.85rem;
+        --fs-header: 2.8rem;
+        --fs-sub-header: 1.25rem;
+        --fs-body: 1rem;
+        --fs-body4: 0.95rem;
+        --fs-learn-more: 1rem;
+    }
+}
+
 /* Enables Snapping */
 html {
     scroll-snap-type: y mandatory;
@@ -17,6 +52,7 @@ body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     position: relative;
+    font-size: var(--fs-normal);
 }
 
 /* NAVIGATION BAR */

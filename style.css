@@ -1,5 +1,4 @@
 /* SCROLL CONTAINER CODE */
-/* Snap to the start of each container */
 .snap-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -12,7 +11,6 @@
         scroll-snap-align: none;
         scroll-snap-stop: none;
     }
-
 }
 
 /* CONTAINER 1 */
@@ -20,7 +18,7 @@
     padding: 125px 0;
 }
 
-.background-element-left {
+.background-element-1 {
     position: absolute;
     left: 0;
     height: 620px;
@@ -33,7 +31,7 @@
 }
 
 /* Img & Content */
-.content-container-left {
+.content-container-1 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -49,7 +47,6 @@
 
 /* Daniel Keller Picture */
 .headshot {
-    height: 550px;
     width: 550px;
     border-radius: 400px;
     box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
@@ -68,7 +65,8 @@
     color: #1B63EF;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: var(--fs-header);
+    /*font-size: 45px;*/
     font-weight: 500;
     margin: 0px;
 }
@@ -77,7 +75,8 @@
     color: #333333;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: var(--fs-header);
+    /*font-size: 45px;*/
     font-weight: 500;
     margin: 0px;
 }
@@ -88,14 +87,17 @@
     text-align: right;
     padding-left: 40px;
     margin: 20px 0px;
+    font-size: var(--fs-body);
 }
 
 /* Home Submenu */
 .home-submenu {
     display: flex;
+    position: relative;
     padding: 20;
     max-width: 1250px;
     margin: 0 auto;
+    z-index: 9999;
 }
 
 /* Header 1 - 3 */
@@ -132,14 +134,27 @@ a.header-2:hover, a.header-3:hover {
     height: 70px;
 }
 
-/* TABLET */
-@media only screen and (max-width: 1024px) {
-    .background-element-left {
-        width: 83%;
+/* RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+    .background-element-1 {
+        height: 520px;
+        width: 45%;
     }
 
-    .content-container-left {
+    .headshot {
+        /*height: 450px;*/
+        width: 450px;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    .content-container-1 {
         flex-flow: wrap;
+    }
+
+    .background-element-1 {
+        width: 83%;
     }
 }
 
@@ -151,11 +166,10 @@ a.header-2:hover, a.header-3:hover {
 /* CONTAINER 2 */
 /* The Future of AI */
 .container-2 {
-
     padding: 125px 0;
 }
 
-.background-element-right {
+.background-element-2 {
     position: absolute;
     right: 0;
     height: 620px;
@@ -167,7 +181,7 @@ a.header-2:hover, a.header-3:hover {
     border-bottom-left-radius: 400px;
 }
 
-.content-container-right {
+.content-container-2 {
     display: flex;
     justify-content: center;
     flex-flow: row-reverse;
@@ -182,12 +196,12 @@ a.header-2:hover, a.header-3:hover {
     padding: 35px;
 }
 
-/* Daniel Keller Picture */
+/* AI Image / Object Needed - IMG Size */
 .headshot-2 {
     height: 550px;
     width: 550px;
     border-radius: 400px;
-    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
     object-fit: cover;
     object-position: center;
 }
@@ -205,7 +219,8 @@ a.header-2:hover, a.header-3:hover {
     color: #1B63EF;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-title);
+    /*font-size: 20px;*/
     font-weight: 500;
     margin: 20px 0px;
 }
@@ -214,7 +229,8 @@ a.header-2:hover, a.header-3:hover {
     color: #333333;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: var(--fs-header);
+    /*font-size: 45px;*/
     font-weight: 500;
     margin: 0px;
 }
@@ -225,6 +241,7 @@ a.header-2:hover, a.header-3:hover {
     text-align: left;
     padding-right: 40px;
     margin: 20px 0px;
+    font-size: var(--fs-body);
 }
 
 /* Button */
@@ -245,14 +262,27 @@ a.header-2:hover, a.header-3:hover {
     text-decoration: none;
 }
 
-/* TABLET */
-@media only screen and (max-width: 1024px) {
-    .background-element-right {
-        width: 83%;
+/* RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+    .background-element-2 {
+        height: 520px;
+        width: 45%;
     }
 
-    .content-container-right {
+    .headshot-2 {
+        height: 450px;
+        width: 450px;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    .content-container-2 {
         flex-flow: wrap;
+    }
+
+    .background-element-2 {
+        width: 83%;
     }
 }
 
@@ -264,34 +294,10 @@ a.header-2:hover, a.header-3:hover {
 /* CONTAINER 3 */
 /* Section 3 Content */
 .container-3 {
-
     padding: 125px 0;
 }
 
-.sec3-left {
-    margin: 0;
-    padding: 35px;
-}
-
-/* Flux Marketplace */
-.headshot-3 {
-    height: 550px;
-    width: 550px;
-    border-radius: 400px;
-    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
-    object-fit: cover;
-    object-position: center;
-}
-
-.sec3-right {
-    max-width: 600px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.background-element-left-3 {
+.background-element-3 {
     position: absolute;
     left: 0;
     height: 620px;
@@ -304,7 +310,7 @@ a.header-2:hover, a.header-3:hover {
 }
 
 /* Img & Content */
-.content-container-left-3 {
+.content-container-3 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -312,12 +318,33 @@ a.header-2:hover, a.header-3:hover {
     z-index: 2;
 }
 
+.sec3-left {
+    margin: 0;
+    padding: 35px;
+}
+
+/* Flux Marketplace */
+.headshot-3 {
+    width: 550px;
+    border-radius: 400px;
+    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sec3-right {
+    max-width: 600px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Title */
 .sec3-h1 {
     color: #1B63EF;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-title);
+    /*font-size: 20px;*/
     font-weight: 500;
     margin: 20px 0px;
 }
@@ -326,7 +353,8 @@ a.header-2:hover, a.header-3:hover {
     color: #333333;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: var(--fs-header3);
+    /*font-size: 45px;*/
     font-weight: 500;
     margin: 0px;
     padding-left: 70px;
@@ -338,6 +366,7 @@ a.header-2:hover, a.header-3:hover {
     text-align: right;
     padding-left: 40px;
     margin: 20px 0px;
+    font-size: var(--fs-body);
 }
 
 /* Button */
@@ -355,14 +384,27 @@ a.header-2:hover, a.header-3:hover {
     align-self: flex-end;
 }
 
-/* TABLET */
-@media only screen and (max-width: 1024px) {
-    .background-element-left-3 {
-        width: 83%;
+/* RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+    .background-element-3 {
+        height: 520px;
+        width: 45%;
     }
 
-    .content-container-left-3 {
+    .headshot-3 {
+        /*height: 450px;*/
+        width: 450px;
+    }
+}
+
+/* TABLET */
+@media only screen and (max-width: 1024px) {
+    .content-container-3 {
         flex-flow: wrap;
+    }
+
+    .background-element-3 {
+        width: 83%;
     }
 }
 
@@ -374,11 +416,10 @@ a.header-2:hover, a.header-3:hover {
 /* CONTAINER 4 */
 /* What Problems Can We Solve? */
 .container-4 {
-
     padding: 125px 0;
 }
 
-.background-element-right-4 {
+.background-element-4 {
     position: absolute;
     right: 0;
     height: 620px;
@@ -390,7 +431,7 @@ a.header-2:hover, a.header-3:hover {
     border-bottom-left-radius: 400px;
 }
 
-.content-container-right-4 {
+.content-container-4 {
     display: flex;
     justify-content: center;
     flex-flow: row-reverse;
@@ -428,7 +469,8 @@ a.header-2:hover, a.header-3:hover {
     color: #333333;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 50px;
+    font-size: var(--fs-header4);
+    /*font-size: 50px;*/
     font-weight: 500;
     margin: 20px 0px;
 }
@@ -449,7 +491,8 @@ a.header-2:hover, a.header-3:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin: 15px 0px;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: var(--fs-sub-header);
 }
 
 /* Paragraphs */
@@ -459,22 +502,37 @@ a.header-2:hover, a.header-3:hover {
     padding-right: 40px;
     margin: 20px 0px;
     font-size: 15px;
+    font-size: var(--fs-body4);
 }
 
 /* Learn More */
 .more-lnk {
     color: #1B63EF;
     font-weight: 500;
+    font-size: var(--fs-learn-more);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+    .background-element-4 {
+        height: 520px;
+        width: 45%;
+    }
+
+    .headshot-4 {
+        /*height: 450px;*/
+        width: 450px;
+    }
 }
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
-    .background-element-right-4 {
-        width: 83%;
+    .content-container-4 {
+        flex-flow: wrap;
     }
 
-    .content-container-right-4 {
-        flex-flow: wrap;
+    .background-element-4 {
+        width: 83%;
     }
 }
 
