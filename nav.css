@@ -14,13 +14,21 @@ img {
 :root {
     /* Minimum - Growth Rate (Normal Size) - Maximum
     --fs-title: clamp(1rem, 0.25rem + 1vw, 1.25rem); */
+    /* font-size: 20px; */
     --fs-title: 1.25rem;
+    /* font-size: 50px; */
     --fs-header4: 3.15rem;
+    /* font-size: 45px; */
     --fs-header3: 2.85rem;
+    /* font-size: 45px; */
     --fs-header: 2.8rem;
+    /* font-size: 20px; */
     --fs-sub-header: 1.25rem;
+    /* font-size: 16px; */
     --fs-body: 1rem;
+    /* font-size: 15px; */
     --fs-body4: 0.95rem;
+    /* font-size: 16px; */
     --fs-learn-more: 1rem;
 }
 
