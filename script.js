@@ -33,3 +33,35 @@ hamburger.addEventListener('click', () => {
         }, delay);
     });
 });
+
+
+// Handles Section 1 Content Slider
+document.addEventListener("DOMContentLoaded", function() {
+    const sliderLinks = document.querySelectorAll(".slider-link");
+    const slides = document.querySelectorAll(".slide");
+
+    sliderLinks.forEach(function(link) {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            // Remove active class from all links
+            sliderLinks.forEach(function(link) {
+                link.classList.remove("active");
+            });
+            // Add active class to clicked link
+            this.classList.add("active");
+
+            // Get the index of the clicked link
+            const index = parseInt(this.getAttribute("data-slide"));
+
+            // Hide all slides
+            slides.forEach(function(slide) {
+                slide.classList.remove("active");
+            });
+
+            // Show the corresponding slide
+            slides[index].classList.add("active");
+        });
+    });
+});
+

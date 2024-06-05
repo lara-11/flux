@@ -2,7 +2,7 @@
 .snap-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: 100vh;
+    /* height: 100vh; */
     /* height: calc(100vh - 95px); */
 }
 
@@ -37,6 +37,7 @@
 .content-container-1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 30px 0px;
     position: relative;
@@ -102,18 +103,7 @@
 }
 
 /* Header 1 - 3 */
-.header-1 {
-    color: #1B63EF;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 600;
-    max-width: 230px;
-    margin: 15px 0px 15px 0px;
-    padding: 0px 20px 20px 20px;
-}
-
-a.header-2, a.header-3 {
+a.header-1, a.header-2, a.header-3 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -170,6 +160,11 @@ a.header-2:hover, a.header-3:hover {
     .sec1-right {
         max-width: 80%;
         padding: 35px 35px 0px 35px;
+    }
+
+    .slide-container {
+        display: flex;
+        justify-content: center;
     }
 
     .sec1-header-flex {
@@ -645,20 +640,18 @@ a.header-2:hover, a.header-3:hover {
 .snap-section-footer {
     scroll-snap-align: end;
     scroll-snap-stop: always;
-    background-color: white;
+    /* background-color: white; */
 }
 
 /* FOOTER BOTTOM */
 .footer-bottom {
-    padding: 15px 0px;
-}
-
-.footer-bottom-content {
     display: flex;
     justify-content: center;
     color: #333333;
     text-decoration: none;
     gap: 5px;
+    padding: 15px 0px;
+    background-color: white;
 }
 
 .bottom-footer-logo {

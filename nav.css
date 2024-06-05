@@ -237,3 +237,28 @@ body {
 @media only screen and (max-width: 768px) {
 
 }
+
+/* SLIDER NAVIGATION */
+.slide {
+    display: none;
+}
+
+/* Show active slide */
+.slide.active {
+    display: block;
+    animation: fade 1.3s ease-in-out;
+}
+
+.slider-link.active {
+    color: #1B63EF;
+}
+
+/* Fade animation */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
