@@ -37,9 +37,9 @@ img {
     :root {
         --fs-xl: ;
         --fs-title: 1.25rem;
-        --fs-header4: 3.15rem;
-        --fs-header3: 2.85rem;
-        --fs-header: 2.8rem;
+        --fs-header4: 2.5rem;
+        --fs-header3: 2.25rem;
+        --fs-header: 2rem;
         --fs-sub-header: 1.25rem;
         --fs-body: 1rem;
         --fs-body4: 0.95rem;
