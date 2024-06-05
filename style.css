@@ -2,14 +2,16 @@
 .snap-section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    height: calc(100vh - 125px);
+    height: 100vh;
+    /* height: calc(100vh - 95px); */
 }
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
     .snap-section {
-        scroll-snap-align: none;
-        scroll-snap-stop: none;
+       /* scroll-snap-align: none;
+        scroll-snap-stop: none; */
+        height: auto;
     }
 }
 
@@ -147,6 +149,10 @@ a.header-2:hover, a.header-3:hover {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
+    .container-1 {
+        padding: 95px 0px 0px 0px;
+    }
+
     .content-container-1 {
         flex-flow: wrap;
         margin: 30px 0px 0px 0px;
@@ -289,6 +295,10 @@ a.header-2:hover, a.header-3:hover {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
+    .container-2 {
+        padding: 95px 0px 0px 0px;
+    }
+
     .content-container-2 {
         flex-flow: wrap;
         margin: 30px 0px 0px 0px;
@@ -421,6 +431,10 @@ a.header-2:hover, a.header-3:hover {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
+    .container-3 {
+        padding: 95px 0px 0px 0px;
+    }
+
     .content-container-3 {
         flex-flow: wrap;
         margin: 30px 0px 0px 0px;
@@ -559,6 +573,10 @@ a.header-2:hover, a.header-3:hover {
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
+    .container-4 {
+        padding: 95px 0px 0px 0px;
+    }
+
     .content-container-4 {
         flex-flow: wrap;
     }
