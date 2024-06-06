@@ -85,14 +85,8 @@ body {
     max-height: 45px;
 }
 
-/* Left menu */
-.nav-menu {
-    margin: 35px;
-    padding: 0;
-}
-
-/* Right menu */
-.nav-menu2 {
+/* Left & Right menu */
+.nav-menu, .nav-menu2 {
     margin: 35px;
     padding: 0;
 }
