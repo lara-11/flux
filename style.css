@@ -641,25 +641,3 @@ a.header-2:hover, a.header-3:hover {
 @media only screen and (max-width:768px) {
 
 }
-
-/* FOOTER */
-.snap-section-footer {
-    scroll-snap-align: end;
-    scroll-snap-stop: always;
-    /* background-color: white; */
-}
-
-/* FOOTER BOTTOM */
-.footer-bottom {
-    display: flex;
-    justify-content: center;
-    color: #333333;
-    text-decoration: none;
-    gap: 5px;
-    padding: 15px 0px;
-    background-color: white;
-}
-
-.bottom-footer-logo {
-    max-height: 20px;
-}
