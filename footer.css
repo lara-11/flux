@@ -1,4 +1,4 @@
-/* FOOTER */
+/* FOOTER TOP */
 .snap-section-footer {
     scroll-snap-align: end;
     scroll-snap-stop: always;
@@ -7,16 +7,66 @@
 
 .footer-top {
     display: flex;
+    justify-content: space-between;
     background-color: #F7F7F7;
     padding: 35px;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 .fooetr-left {
 
 }
 
+.footer-img-wrapper {
+    margin: 0;
+    padding: 15px 35px;
+}
+
+.footer-bio {
+    color: #98A7B9;
+    text-align: left;
+    padding: 10px 35px;
+    font-size: var(--fs-body4);
+    max-width: 450px;
+}
+
+ul.footer-icon-wrap {
+    padding: 10px 35px;
+}
+
+.footer-button-con {
+    display: flex;
+    flex-flow: column;
+    padding: 0 35px;
+
+}
+
+.footer-btn1, .footer-btn2 {
+    width: 40%;
+    background-color: #1B63EF;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10;
+    margin: 10px 0;
+    display: inline;
+    border-radius: 400px;
+}
+
 .footer-right {
     display: flex;
+}
+
+.footer-ai, .footer-marketplace, .footer-flux, .footer-contact {
+    padding: 35px;
+}
+
+.footer-title1, .footer-title2, .footer-title3, .footer-title4 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* FOOTER BOTTOM */
@@ -28,6 +78,10 @@
     gap: 5px;
     padding: 15px 0px;
     background-color: white;
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 2;
 }
 
 .bottom-footer-logo {

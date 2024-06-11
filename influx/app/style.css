@@ -1,0 +1,42 @@
+  /* SECTION 2 */
+  div.agilex-flex-container2 {
+    display: flex;
+    justify-content: center;
+    background: white;
+    margin-bottom: 10px;
+}
+
+div.agilex-powered-box1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 50px 50px 60px 120px;
+}
+
+div.agilex-powered-box2 {
+    padding: 60px 120px 60px 50px;
+}
+
+iframe.agilex-powered-video {
+    width: 700px;
+    height: 380px;
+    max-width: 100%;
+}
+
+h1.agilex-powered-h1 {
+    max-width: 670px;
+    text-align: left;
+    font-size: 60px;
+    color: red;
+    margin-top: 0px;
+}
+
+div.agilex-powered-line {
+    height: 2px;
+    background: #1a272d;
+    margin: 10px 290px 15px 0px;
+}
+
+p.agile-powered-p {
+    max-width: 670px;
+    text-align: justify;
+}
