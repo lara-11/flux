@@ -283,6 +283,12 @@ a.header-2:hover, a.header-3:hover {
     margin: 0;
     display: inline;
     border-radius: 400px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Horizon Offset, Vertical Offset, Blur Raddius */
+.more-btn-left:hover  {
+    box-shadow: 0px 0px 6px #1B63EF;
 }
 
 .btn-text {
@@ -427,6 +433,11 @@ a.header-2:hover, a.header-3:hover {
     display: inline;
     border-radius: 400px;
     align-self: flex-end;
+}
+
+/* Horizon Offset, Vertical Offset, Blur Raddius */
+.more-btn-right:hover  {
+    box-shadow: 0px 0px 6px #1B63EF;
 }
 
 /* TABLET */
