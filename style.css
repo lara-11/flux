@@ -580,12 +580,12 @@ a.header-2:hover, a.header-3:hover {
     font-size: var(--fs-body4);
 }
 
-/* Learn More */
+/* Learn More
 .more-lnk {
     color: #1B63EF;
     font-weight: 500;
     font-size: var(--fs-learn-more);
-}
+} */
 
 /* TABLET */
 @media only screen and (max-width: 1024px) {
