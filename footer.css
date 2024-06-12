@@ -39,6 +39,30 @@ ul.footer-icon-wrap {
     padding: 10px 35px;
 }
 
+.footer-icon-li {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10;
+    margin: 0;
+    display: inline;
+}
+
+.footer-icon {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.footer-icon-li .footer-icon {
+    transition: color 0.7s ease;
+}
+
+.footer-icon-li:hover .footer-icon {
+    color: #1B63EF;
+}
+
 .footer-button-con {
     display: flex;
     flex-flow: column;
@@ -56,6 +80,11 @@ ul.footer-icon-wrap {
     margin: 10px 0;
     display: inline;
     border-radius: 400px;
+    transition: box-shadow 0.5s ease;
+}
+
+.footer-btn1:hover, .footer-btn2:hover  {
+    box-shadow: 0px 0px 6px #1B63EF;
 }
 
 .footer-right {
@@ -73,6 +102,7 @@ ul.footer-icon-wrap {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 25px;
 }
 
 .footer-link {
@@ -86,13 +116,12 @@ ul.footer-icon-wrap {
     border-top: 2px solid #98A7B9;
     width: 100%;
     max-width: 1350px;
-    margin: 35px;
+    margin-bottom: 35px;
 }
 
 .footer-top-sec2 {
     display: flex;
     justify-content: space-between;
-    padding: 0 35px;
 }
 
 .footer-copy {

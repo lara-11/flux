@@ -51,7 +51,7 @@
 }
 
 /* Daniel Keller Picture */
-.headshot {
+.image {
     width: 550px;
     max-width: 100%;
     height: auto;
@@ -142,7 +142,7 @@ a.header-2:hover, a.header-3:hover {
         width: 80%;
     }
 
-    .headshot {
+    .image {
         width: 425px;
         max-width: 80%;
     }
@@ -186,7 +186,7 @@ a.header-2:hover, a.header-3:hover {
 
 /* MOBILE */
 @media only screen and (max-width:768px) {
-    .headshot {
+    .image {
         max-width: 60%;
     }
 }
@@ -228,12 +228,12 @@ a.header-2:hover, a.header-3:hover {
 }
 
 /* AI Image / Object Needed - IMG Size */
-.headshot-2 {
+.image-2 {
     width: 550px;
     max-width: 100%;
     height: auto;
     border-radius: 400px;
-    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .sec2-right {
@@ -274,7 +274,7 @@ a.header-2:hover, a.header-3:hover {
 
 /* Button */
 .more-btn-left {
-    max-width: 40%;
+    width: 40%;
     background-color: #1B63EF;
     border: none;
     cursor: pointer;
@@ -283,7 +283,7 @@ a.header-2:hover, a.header-3:hover {
     margin: 0;
     display: inline;
     border-radius: 400px;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 
 /* Horizon Offset, Vertical Offset, Blur Raddius */
@@ -311,7 +311,7 @@ a.header-2:hover, a.header-3:hover {
         width: 80%;
     }
 
-    .headshot-2 {
+    .image-2 {
         width: 425px;
         max-width: 100%;
     }
@@ -375,7 +375,7 @@ a.header-2:hover, a.header-3:hover {
 }
 
 /* Flux Marketplace */
-.headshot-3 {
+.image-3 {
     width: 550px;
     max-width: 100%;
     height: auto;
@@ -422,7 +422,6 @@ a.header-2:hover, a.header-3:hover {
 
 /* Button */
 .more-btn-right {
-    /* max-width: 40%; */
     width: 40%;
     background-color: #1B63EF;
     border: none;
@@ -432,6 +431,7 @@ a.header-2:hover, a.header-3:hover {
     margin: 0;
     display: inline;
     border-radius: 400px;
+    transition: box-shadow 0.5s ease;
     align-self: flex-end;
 }
 
@@ -455,7 +455,7 @@ a.header-2:hover, a.header-3:hover {
         width: 80%;
     }
 
-    .headshot-3 {
+    .image-3 {
         width: 425px;
         max-width: 100%;
     }
@@ -524,12 +524,12 @@ a.header-2:hover, a.header-3:hover {
 }
 
 /* World Map Picture */
-.headshot-4 {
+.image-4 {
     width: 550px;
     max-width: 100%;
     height: auto;
     border-radius: 400px;
-    box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .sec4-right {
@@ -601,7 +601,7 @@ a.header-2:hover, a.header-3:hover {
         width: 80%;
     }
 
-    .headshot-4 {
+    .image-4 {
         width: 425px;
         max-width: 100%;
     }
